@@ -1,31 +1,48 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
 }
 
-h1{font-size: 3.5em;}
-h2{font-size: 2.7em;}
-h3{font-size: 2em;}
-p{font-size: 1.25em;}
+h1 {
+    font-size: 3.5em;
+}
 
-a:link ,a:active,a:hover{
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+a:link,
+a:active,
+a:hover {
     text-decoration: none;
-     
+
 }
-img{
+
+img {
     max-width: 100%;
 }
 
 
-button{
+button {
     font-size: 1-5em;
     font-weight: bold;
     padding: 10px 20px;
@@ -37,146 +54,220 @@ button{
     transition: color 300ms, background-color 350ms;
 }
 
-button:hover{
+button:hover {
     color: rgb(230, 159, 27);
     background-color: rgb(128, 73, 180);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.container{
+.container {
     max-width: 1440px;
     margin: auto;
 }
-.color-acento{
+
+.color-acento {
     color: rgb(128, 73, 180);
 }
-header{
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+header {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
-header .logo{
+header .logo {
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
     color: rgb(49, 26, 42);
     font-size: 1.5em;
-}  
+}
 
-header .container{
+header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
+
+
 }
 
-header .main-menu__items{
+header .main-menu__items {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 }
 
-header a{
+header a {
     font-weight: bold;
     color: black;
     transition: color 300ms;
     font-size: 17px;
 }
-header a:hover{
-   color: blueviolet;
+
+header a:hover {
+    color: blueviolet;
 }
-.header--show{
+
+.header--show {
     transform: translateY(0);
 }
 
-#hero{
-   display: flex; 
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   flex-direction: column;
-   height: 90vh;
-   color: white;
-   background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-   ) ,url("img/166105-cyberpunk-anime-retro_punk_anime_girl_acostado_en_la_cama-morado-violeta-3840x2160.jpg");
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 94vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/166105-cyberpunk-anime-retro_punk_anime_girl_acostado_en_la_cama-morado-violeta-3840x2160.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 
-#informacion-sobre-monas .container{
+#informacion-sobre-monas .container {
     text-align: center;
-    padding:200px 12px ;
+    padding: 200px 12px;
 }
 
 
-#images-monaschinas{
+#images-monaschinas {
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
 }
-#images-monaschinas .container{
+
+#images-monaschinas .container {
     padding: 100px 0px;
 }
-#images-monaschinas h2{
+
+#images-monaschinas h2 {
     margin: 0;
 }
-#images-monachinas p{
+
+#images-monachinas p {
     display: none;
 }
 
-.carta{
+.carta {
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     padding: 70px;
     margin: 20px;
     border-radius: 15px;
 }
 
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-       ) ,url("img/185425.jpg");
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/185425.jpg");
 }
 
-.carta:nth-child(2){
+.carta:nth-child(2) {
     background-position: center top;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-       ) ,url("img/Chainsaw.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/Chainsaw.jpg");
 }
 
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-       ) ,url("img/692362.png");
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/692362.png");
 }
 
-.informacion-sobre-monas .container{
-    text-align: center;
-}
-
-footer .container{
+.informacion-sobre-monas .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    background-color: black;
+    color: white;
 }
 
-footer .container p{
-    align-self: end;
-    justify-self: end;
+footer .container {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    color: rgb(0, 0, 0);
+    height: 60px;
+
 }
 
-@media screen and (min-width: 767px) {
+footer .container p {
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+
+
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .main-menu__items {
+        flex-direction: row;
+        padding-bottom: 0;
+        margin-right: 4rem;
+
+    }
+
+    header a {
+        margin-left: 20px;
+    }
+
+    #hero {
+        background-position: top center;
+    }
+    #informacion-sobre-monas .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #informacion-sobre-monas .monas-text{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #informacion-sobre-monas .img-container{
+        background-image: url("img/185425.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+    }
+
+    #images-monaschinas .container{
+       display: flex;
+       flex-direction: column;
+       
+    }
+    #images-monaschinas .container h2{
+        margin-bottom: 25px;
+    }
+    #images-monaschinas .container .container-cartas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .carta {
+        padding: 80px;
+
+    }
 
 }
